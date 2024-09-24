@@ -1,90 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDEN DE ETIQUETADO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ORDEN DE ETIQUETADO</h1>
+        <p>RgCE-0400</p>
+        <p>Emitió: GB - Aprobó: GB</p>
+        <p>ETIQUETADO</p>
+        <p>Revisión: 00 - Fecha: 24/10/2022</p>
+    </div>
 
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>REMISIÓN</title>
-		<link rel="stylesheet" href="https://fredyortegon30.github.io/invoice/style.css">
-		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
-	</head>
-	<body>
-		<header>
-			<h1>REMISIÓN</h1>
-			<address>
-				<p>MI EMPRESA</p>
-				<p>NIT 1111111111<br>Calle 11- 10-33</p>
-				<p>Pereira</p>
-			</address>
+    <table>
+        <tr>
+            <th>Id Orden ETQ:</th>
+            <td>ETQ-N28-Rev.1</td>
+            <th>Fecha Orden:</th>
+            <td>17/9/2024</td>
+        </tr>
+        <tr>
+            <th>Almacén destino:</th>
+            <td>Almacén Bodega</td>
+            <th>Solicitó:</th>
+            <td>Gabriel</td>
+        </tr>
+        <tr>
+            <th>Producto Terminado:</th>
+            <td colspan="3">MAIRENA OCASIÓN Cabernet Sauvignon 2022</td>
+        </tr>
+        <tr>
+            <th>Lote:</th>
+            <td>MXC12GAK</td>
+            <th>Cantidad Total a ETQ:</th>
+            <td>360 Botellas</td>
+        </tr>
+    </table>
 
-<div style="float: right;">
-    <img alt="" src="https://acortar.link/caSNRS" style="width: 100px; height: 100px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
-</div>
+    <div class="section-title">Detalle Botellas sin Vestir</div>
+    <table>
+        <thead>
+            <tr>
+                <th>N° Insumo</th>
+                <th>Producto Sin Vestir</th>
+                <th>Añada - Lote</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>38</td>
+                <td>Ocasión Cabernet Sauvignon</td>
+                <td>2021/L-1121 (435 BOT)</td>
+                <td>360</td>
+            </tr>
+        </tbody>
+    </table>
 
+    <div class="section-title">Detalle Insumos de Etiquetado</div>
+    <table>
+        <thead>
+            <tr>
+                <th>N° Insumo</th>
+                <th>Insumos de Etiquetado</th>
+                <th>Unidad</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>25</td>
+                <td>Caja Cartón Blanca con marca Gris x12 bot cónica baja / línea Ocasión</td>
+                <td>UN</td>
+                <td>29,9880</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>Capsula Complex Blanca con dorado /Línea Mairena Ocasión</td>
+                <td>UN</td>
+                <td>360,0000</td>
+            </tr>
+            <tr>
+                <td>151</td>
+                <td>Separador x12 Bot BU 270x195x200 (RTS Mod 048-12TR)</td>
+                <td>UN</td>
+                <td>29,9880</td>
+            </tr>
+            <tr>
+                <td>285</td>
+                <td>ET-MAIRENA Ocasion Cabernet Sauv.2022 Dorso MX</td>
+                <td>UN</td>
+                <td>360,0000</td>
+            </tr>
+            <tr>
+                <td>286</td>
+                <td>ET-MAIRENA Ocasion Cabernet Sauv.Frente MX</td>
+                <td>UN</td>
+                <td>360,0000</td>
+            </tr>
+        </tbody>
+    </table>
 
-		</header>
-		<article>
-			<h1>Recipient</h1>
-			<address>
-				<p>&lt;&lt;[id_cliente].[Nombre_cliente]&gt;&gt;<br>-</p>
-                <p class="small-text"><br>Email: &lt;&lt;[id_cliente].[Email]&gt;&gt;</p>
-                <p class="small-text">Cel:&lt;&lt;[id_cliente].[Celular]&gt;&gt;</p>
-			</address>
-			<table class="meta">
-				<tr>
-					<th><span>Remisión #</span></th>
-					<td><span>&lt;&lt;[N_factura]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Fecha</span></th>
-					<td><span>&lt;&lt;[Fecha]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Total</span></th>
-					<td><span>&lt;&lt;[TOTAL VENTA]&gt;&gt;</span></td>
-				</tr>
-			</table>
-			<table class="inventory">
-				<thead>
-					<tr>
-						<th><span>Producto</span></th>
-						<th><span>Descripcion</span></th>
-						<th><span>Valor ud</span></th>
-						<th><span>Cantidad</span></th>
-						<th><span>Subtotal</span></th>
-					</tr>
-				</thead>
-				<tbody>
-				<p><span>&lt;&lt;Start: SELECT(DETALLE_VENTAS[id_detalle],[id_encabezado_venta]=[id_encabezado]) &gt;&gt;</span></p>
-					<tr>
-						<td><a class="cut">-</a>&lt;&lt;[id_producto].[Nombre de producto]&gt;&gt;</td>
-						<td><span></span></td>
-				        <td><span>&lt;&lt;[Valor_unitario]&gt;&gt;</span></td>
-						<td><span>&lt;&lt;[Cantidad]&gt;&gt;</span></td>
-						<td><span>&lt;&lt;[Subtotal]&gt;&gt;</span></td>
-					</tr>
-				<p><span>&lt;&lt; end &gt;&gt;</span></p>
-				</tbody>
-			</table>
-			<a class="add">+</a>
-			<table class="balance">
-				<tr>
-					<th><span>Total</span></th>
-					<td><span>&lt;&lt;[TOTAL VENTA]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Otros conceptos</span></th>
-					<td><span data-prefix="$"></span><span>0.00</span></td>
-				</tr>
-				<tr>
-					<th><span>Total a pagar</span></th>
-					<td><span>&lt;&lt;[TOTAL VENTA]&gt;&gt;</span></td>
-				</tr>
-			</table>
-		</article>
-		<aside>
-			<h1><span>Notas adicionales</span></h1>
-			<div>
-				<p>Pagos a la cuenta de ahorros bancolombia # </p>
-			</div>
-		</aside>
-	</body>
+    <div class="footer">
+        <div class="section-title">Referencia Motivos Fallas de Etiquetado</div>
+        <p>Rotura Merma Insumo Análisis durante FRO Contaminación</p>
+        <p>R M IN AN CO</p>
+    </div>
+</body>
 </html>
